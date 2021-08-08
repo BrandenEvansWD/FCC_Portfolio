@@ -9,6 +9,7 @@ html {
     font-size: 62.5%;
     height: 100%;
     width: 100%;
+    scroll-padding-top: 64px;
 }
 
 *, *:before, *:after {
@@ -149,10 +150,14 @@ p, a {
         font-size: 3rem;
         text-align: center;
         margin-bottom: 2rem;
+        margin-top: 2rem;
     }
     #about h3 {
         text-align: center;
         margin-bottom: 2rem;
+    }
+    #about h3:last-of-type {
+        margin-top: 0;
     }
     #about p {
         text-align: center;
@@ -166,6 +171,11 @@ p, a {
     }
     .progress-bars>div {
         margin-bottom: 2rem;
+    }
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     /* ======================================== */
     /*                  HTML BAR                */
@@ -378,7 +388,7 @@ p, a {
     }
     .figma-progress::after {
         content: '';
-        width: 60px;
+        width: 30px;
         height: 12px;
         position: absolute;
         left: 9px;
@@ -435,14 +445,13 @@ p, a {
         left: 8px;
         background: #006d77;
         transform: translateZ(-1px);
-        box-shadow: 12px 20px 10px rgba(0, 0, 0, 0.4);
     }
     img {
         width: 260px;
         height: 150px;
         object-fit: cover;
         display: block;
-        border: 2px solid #000;
+        border: 4px solid #006d77;
         margin: 1rem 0;
     }
     img:hover {
@@ -452,7 +461,7 @@ p, a {
         color: #000;
         text-align: center;
         font-size: 3rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
     #projects h3 {
         text-align: center;
@@ -513,13 +522,14 @@ p, a {
     /* ======================================== */
     .overlay>div {
         background: rgba(46, 196, 182, .55);
+        width: 100%;
     }
     #contact h2 {
         color: #000;
         text-align: center;
         font-size: 3rem;
         margin-top: 3rem;
-        padding-top: 2rem;
+        padding-top: 3rem;
     }
     #contact h3 {
         text-align: center;
@@ -529,10 +539,101 @@ p, a {
         text-align: center;
         margin: 2rem 0;
     }
+    .contact-buttons {
+        display: flex;
+        justify-content: space-around;
+        font-size: 4rem;
+        text-align: center;
+        margin: 4rem 0 0;
+        padding-bottom: 13rem;
+    }
+    .contact-buttons div {
+        display: inline-block;
+    }
+    .fa-instagram-square:hover, .fa-twitter-square:hover, .fa-facebook-square:hover, .fa-linkedin:hover {
+        color: #fff;
+    }
+    /* ======================================== */
+    /*                   FOOTER                 */
+    /* ======================================== */
+    footer .overlay>div {
+        background: #014950b4;
+        padding: 3rem 1rem 2rem;
+        height: 230px;
+    }
+    .footer-nav {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    footer a {
+        display: block;
+        margin: 1rem 0 0;
+        text-decoration: none;
+        color: #fff;
+        grid-column: 1/2;
+        transition: .4s ease;
+    }
+    footer a:hover {
+        color: #ff9f1c;
+    }
+    footer p {
+        color: #fff;
+        text-align: center;
+        font-size: 1.4rem;
+        margin: 2rem;
+    }
+    .footer-container {
+        width: 100%;
+        height: 145px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-container {
+        display: inline-block;
+    }
+    #contact-button {
+        background-color: #fff;
+        text-align: center;
+        color: #000;
+        width: 150px;
+        padding: 1rem;
+        font-size: 2rem;
+        transition: position .4s ease;
+        text-decoration: none;
+        border: 3px solid #000;
+        box-shadow: 5px -5px 0 #000;
+        transition: .4s ease;
+    }
+    #contact-button:hover {
+        background-color: #ff9f1c;
+        box-shadow: inset 5px 5px 0px rgba(0, 0, 0, 0.5);
+        position: relative;
+        top: -5px;
+        left: 5px;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    #navbar {
+        justify-content: flex-end;
+    }
 }
 
 @media only screen and (min-width: 768px) {}
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+    #about, #projects {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    #contact .overlay div {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
 
 @media only screen and (min-width: 1300px) {}

@@ -25,7 +25,7 @@
     <!-- /* ======================================== */ -->
     <nav id="navbar">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#projects" target="">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -46,47 +46,57 @@
         <!-- /* ======================================== */ -->
         <!-- /*                    ABOUT                 */ -->
         <!-- /* ======================================== */ -->
-        <section id="about">
+        <section id="about" class="target">
             <h2>About Me</h2>
             <p>
-                My name is Branden, and I'm an aspiring front-end web developer based in Michigan. I began my coding
-                journey at the start of June 2021. I'm currently working
-                on a mix of Free Code Camp courses, The Odin Project and multiple courses on Udemy.
+                My name is Branden, and I'm an aspiring front-end web developer based in Michigan. I originally began my
+                coding
+                journey nearly 14 years ago when I took a highschool QBasic class, followed by a class in HTML. I
+                eventually worked out a private study with my teacher to study CSS and Photoshop.
             </p>
-
-            <h3 class="lang">Coding Languages</h3>
-            <div class="progress-bars">
+            <p>
+                I rediscovered my passion for code in June of 2021 with FreeCodeCamp, and haven't looked back since. I'm
+                currently working on a mix of Free Code Camp courses, The Odin Project and multiple courses on Udemy.
+            </p>
+            <div class="about-container">
                 <div>
-                    <i class="devicon-html5-plain-wordmark colored"></i>
-                    <div class="html-progress"></div>
+                    <h3 class="lang">Coding Languages</h3>
+                    <div class="progress-bars">
+                        <div>
+                            <i class="devicon-html5-plain-wordmark colored"></i>
+                            <div class="html-progress"></div>
+                        </div>
+
+                        <div>
+                            <i class="devicon-css3-plain-wordmark colored"></i>
+                            <div class="css-progress"></div>
+                        </div>
+
+                        <div>
+                            <i class="devicon-javascript-plain colored"></i>
+                            <div class="js-progress"></div>
+                        </div>
+                    </div>
                 </div>
 
                 <div>
-                    <i class="devicon-css3-plain-wordmark colored"></i>
-                    <div class="css-progress"></div>
-                </div>
+                    <h3 class="tech">Technologies</h3>
+                    <div class="progress-bars">
+                        <div>
+                            <i class="devicon-git-plain-wordmark colored"></i>
+                            <div class="git-progress"></div>
+                        </div>
 
-                <div>
-                    <i class="devicon-javascript-plain colored"></i>
-                    <div class="js-progress"></div>
-                </div>
-            </div>
+                        <div>
+                            <i class=" devicon-github-original-wordmark colored"></i>
+                            <div class="github-progress"></div>
+                        </div>
 
-            <h3 class="tech">Technologies</h3>
-            <div class="progress-bars">
-                <div>
-                    <i class="devicon-git-plain-wordmark colored"></i>
-                    <div class="git-progress"></div>
-                </div>
-
-                <div>
-                    <i class=" devicon-github-original-wordmark colored"></i>
-                    <div class="github-progress"></div>
-                </div>
-
-                <div>
-                    <i class="devicon-figma-plain colored"></i>
-                    <div class="figma-progress"></div>
+                        <div>
+                            <i class="devicon-figma-plain colored"></i>
+                            <div class="figma-progress"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -94,14 +104,14 @@
         <!-- /* ======================================== */ -->
         <!-- /*                  PROJECTS                */ -->
         <!-- /* ======================================== */ -->
-        <section id="projects">
+        <section id="projects" class="target">
             <h2>Projects</h2>
             <div class="flex-container">
                 <div class="project-tile">
                     <h3>Git Basics</h3>
                     <a href="https://brandenevanswd.github.io/FCC_Technical_Doc/"><img
                             src="images/brandenevanswd.github.io_FCC_Technical_Doc_.png"
-                            alt="Technical documentation project">
+                            alt="Technical documentation project thumbnail.">
                     </a>
                     <p>
                         My Git Basics page was created with HTML and CSS. I challenged myself to use a grid layout for
@@ -118,13 +128,14 @@
 
                 <div class="project-tile">
                     <h3>Product Landing Page</h3>
-                    <a href="https://brandenevanswd.github.io/Landing_Page/"><img
-                            src="images/brandenevanswd.github.io_Landing_Page_.png">
+                    <a href="https://brandenevanswd.github.io/Landing_Page/" target="_blank"><img
+                            src="images/brandenevanswd.github.io_Landing_Page_.png"
+                            alt="Landing page project thumbnail.">
                     </a>
                     <p>
-                        My Git Basics page was created with HTML and CSS. I challenged myself to use a grid layout for
-                        the
-                        first time, while also learning a bit more about Git.
+                        In this project we were required to create a landing page for a product of our choosing. This
+                        was my first experience in using flexbox, which initially proved difficult with my limited
+                        experience.
                     </p>
                     <div class="card-footer">
                         <p>
@@ -143,7 +154,7 @@
         <!-- /* ======================================== */ -->
         <!-- /*                   CONTACT                */ -->
         <!-- /* ======================================== */ -->
-        <section id="contact">
+        <section id="contact" class="target">
             <div class="overlay">
                 <div>
                     <h2>Contact Me</h2>
@@ -151,7 +162,10 @@
                         If you would like to reach out to me, select one of the methods below.
                     </p>
                     <div class="contact-buttons">
-
+                        <div><i class="fab fa-instagram-square"></i></div>
+                        <div><i class="fab fa-twitter-square"></i></div>
+                        <div><i class="fab fa-facebook-square"></i></div>
+                        <div><i class="fab fa-linkedin"></i></div>
                     </div>
                 </div>
             </div>
@@ -162,12 +176,28 @@
     <!-- /*                   FOOTER                 */ -->
     <!-- /* ======================================== */ -->
     <footer>
+        <div class="overlay">
+            <div>
+                <div class="footer-container">
+                    <div class="footer-nav">
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                        <a href="https://www.github.com/BrandenEvansWD" target="_blank">Github</a>
+                        <a href="https://www.freecodecamp.org/fccb0225927-27a7-41ef-9455-a785a945cf20"
+                            target="_blank">FreeCodeCamp</a>
+                    </div>
 
+                    <div class="button-container">
+                        <a href="contact.html" id="contact-button">Contact Form</a>
+                    </div>
+                </div>
+                <p>&#169 2021 Branden Evans, All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
 
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-<!-- Photo by <a href="https://unsplash.com/@clemhlrdt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clément Hélardot</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
 
 </html>
