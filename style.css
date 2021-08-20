@@ -623,7 +623,7 @@ p, a {
     }
 }
 
-@media only screen and (min-width: 768px) {}
+/* @media only screen and (min-width: 768px) {} */
 
 @media only screen and (min-width: 1024px) {
     #about, #projects {
@@ -636,4 +636,4 @@ p, a {
     }
 }
 
-@media only screen and (min-width: 1300px) {}
+/* @media only screen and (min-width: 1300px) {} */
